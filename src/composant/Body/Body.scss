@@ -1,0 +1,74 @@
+$primary-color: #ffe81f;
+
+input{
+    margin-top: 5vh;
+}
+
+.button{
+    background-color: $primary-color ;
+    border: none;
+    margin: 1px;
+    border-radius: 3px;
+    &:hover{
+        background-color: white;
+    }
+}
+
+#buttonnext
+{
+    float: right;
+}
+
+.buttonNone{
+    display: none;
+}
+
+#body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+#listPerso
+{
+    width: 40vw;
+}
+
+#listName{
+    
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    min-height: 225px;
+    margin-left: auto;
+    margin-right: auto;
+
+    button{
+        @extend.button;
+    }
+}
+
+#infoPerso{
+    margin-top: 10vh;
+    width: 40vw;
+}
+
+#searchbarre
+{
+    display: flex;
+    border-radius: 3px;
+    border: $primary-color;
+    width: 70%;
+    height: 20px;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px $primary-color;
+}

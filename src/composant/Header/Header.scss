@@ -1,0 +1,33 @@
+$primary-color: #ffe81f;
+
+@font-face {
+    font-family: 'death_starregular';
+    src: url('/font/deathstar-webfont.woff2') format('woff2'),
+         url('/font/deathstar-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1{
+    font-family: "death_starregular", sans-serif, bold;
+    font-size: 15vh;
+    color: $primary-color;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h2
+{
+    @extend h1;
+    font-size:10vh;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    height: vh;
+    margin: 0;
+}
